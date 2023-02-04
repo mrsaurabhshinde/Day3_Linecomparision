@@ -23,13 +23,15 @@ public class LineComparision
         int y4 = ch.nextInt();
         double length2 = Math.sqrt((x4-x3) * (x4-x3) + (y4-y3) * (y4-y3));
 
-        System.out.println("first line length is : " + length1);
-        System.out.println("second line length is : " + length2);
-        System.out.println();
+        System.out.println("first line length is : " + length1 );
+        System.out.println("second line length is : " + length2 );
+
         if(length1 == length2)
             System.out.println("both lines are equal");
+        else if(length1 > length2 )
+            System.out.println("length of line1 is > than line2 ");
         else
-            System.out.println("both lines are not equal");
+            System.out.println("length of line1 is < than line2 " );
     }
 
 }
